@@ -1,1 +1,1 @@
-to em pirmas
+to em primas
