@@ -1,0 +1,169 @@
+##Exercício 1
+
+Algoritmo "Endereço"
+Var
+idade,num:inteiro
+nome,num:caracter
+Início
+escreval("qual seu nome?")
+leia (nome)
+escreval("qual sua idade?")
+leia (idade)
+escreval("qual o número da sua casa?")
+leia (num)
+escreval("qual o nome da sua rua?")
+leia (num)
+escreval(nome ,"você tem ", idade," anos e o número da sua casa é", num,"com nome da rua sendo ",num_)
+Fimalgoritmo
+
+##Exercício 2
+
+Algoritmo "Preço_3_Coisas"
+Var
+A,B,S,F,T:real
+Início
+escreval("Quanto custo o arroz?")
+leia (A)
+escreval("Quanto custo a batata palha?")
+leia (B)
+escreval("Quanto custo o suco de garrafa?")
+leia (S)
+F <-A+B+S
+T <- 100-F
+escreval("O valor do arroz é :", A,"R$")
+escreval("O valor da batata palha é :", B,"R$")
+escreval("O valor do suco de garrafa é :", S,"R$")
+escreval("O valor total a ser pago foi de", F,"R$")
+escreval("O troco foi de", T,"R$")
+Fimalgoritmo
+
+##Exercício 3
+
+Algoritmo "Bombons"
+Var
+A,P,S,BB:real
+Início
+escreval("Quantidade de alunos por sala")
+leia (A)
+escreval("Quantidade de professores por sala")
+leia (P)
+escreval("Quantas sala na escola")
+leia (S)
+BB <- (A2+P1)*S
+escreval("É necessário comprar" ,BB," bombons")
+Fimalgoritmo
+
+##Exercício 4
+
+Algoritmo "Tempo_programando"
+Var
+H,T,M,TT:real
+Início
+escreval("Quanto tempo você programou")
+leia (T)
+escreval("Quantos dias na semana você ficou programando")
+leia (H)
+escreval("Quantidade de semana por mês")
+leia (M)
+TT <- (T*H*M)/(H*M)
+escreval("Você ficou",TT," horas programando")
+Fimalgoritmo
+
+##Exercício 5
+
+Algoritmo "Desconto"
+Var
+livro1,livro2,livro3,total,total_desconto,desconto: real
+
+Início
+escreval("Digite o preço do primeiro livro")
+leia (livro1)
+escreval("Digite o preço do segundo livro")
+leia (livro2)
+escreval("Digite o preço do terceiro livro")
+leia (livro3)
+total <- livro1+livro2+livro3
+desconto <- total*(15/100)
+total_desconto <- total-desconto
+escreval("O preço sem desconto é: ",total,"R$")
+escreval("O preço com desconto é: ",total_desconto,"R$")
+Fimalgoritmo
+
+##Exercício 6
+
+Algoritmo "Quilometragem_de_um_carro"
+Var
+C,L,KM:real
+Início
+escreval("Quantos quilômetros o seu carro anda com 1 litro da gasolina?")
+leia (C)
+escreval("Quantos litros de gasolina seu carro tem no tanque?")
+leia (L)
+KM <- C*L
+escreval("seu carro consegue percorrer" ,KM,"KM de distância")
+Fimalgoritmo
+
+##Exercício 7
+
+Algoritmo "Bar_Banheiro"
+Var
+P,B,Bar:real
+Início
+escreval("Limite de pessoas com múltiplos de 50")
+leia (P)
+B <- p/50
+Bar <- P/150
+escreval("É necessário",B," banheiros neste evento")
+escreval("É necessário",Bar," bares neste evento")
+Fimalgoritmo
+
+##Exercício 8
+
+Algoritmo "Hospedagem"
+Var
+P,Q,C,PQ,T:real
+Início
+escreval("Quantas pessoas?")
+leia (P)
+escreval("Quantos vão querer tomar café diário?")
+leia (PQ)
+escreval("Quantas diárias?")
+leia (Q)
+T <- Q*280+PQ*15
+escreval("Tem",P," pessoas nesse grupo.")
+escreval("Tem",PQ," pessoa(s) nesse grupo que querem o café diário.")
+escreval("Vai custar",T,"R$ para pagar a conta total.")
+Fimalgoritmo
+
+##Exercício 9
+
+algoritmo "Passeio"
+Var
+pessoas,Tempo_passeio: inteiro
+gas,valor_Gas,valor_Passeio: real
+início
+escreval ("Digite quantas pessoas vão ao passeio")
+leia (pessoas)
+escreval ("Qual é o tempo de passeio em minutos?")
+leia (Tempo_passeio)
+gas <- (Tempo_passeio/5)*10
+valor_Gas <- gas*15
+valor_Passeio <- valor_Gas+(pessoas*20)
+Escreva("O valor total cobrado pelo passeio é de R$", valor_Passeio)
+Fimalgoritmo
+
+##Exercício 10
+
+Algoritmo "Baleia_Filhotes"
+Var
+B:inteiro
+Ba,Be:real
+Inicio
+B <- 1
+ba <- B*200/4
+escreval("A quantidade de filhotes que uma baleia tem ao decorrer da sua vida em média é de",Ba)
+Be <- B*10/4
+escreval("A média de filhotes por década de uma baleia é",Be)
+escreval("este essa porcentagem a mais seria acumulada até dar a média final de um bebê a ser gerado")
+Fimalgoritmo
+
