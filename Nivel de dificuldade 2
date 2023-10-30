@@ -1,0 +1,280 @@
+
+Nome:Wesley Gabriel Trentin Rodrigues
+
+1-
+
+Algoritmo "semnome"
+Var
+N1, N2, N3,M:real
+
+Inicio
+escreval ("coloque primeira nota")
+leia(n1)
+escreval ("coloque segunda nota")
+leia(n2)
+escreval ("coloque terceira nota")
+leia(n3)
+
+M <- (n1+n2+n3)/3
+
+se (M >= 7) então
+escreval("Aprovado com exelencia!!!,(; com nota",M)
+senao
+se (M < 7) e (M >= 5) então
+escreval("Recuperação!!!); com nota",M)
+senão
+ escreval ("Reprovado!!!0: com nota",M)
+fimse
+fimse
+Fimalgoritmo
+
+
+2-
+
+Algoritmo "semnome"
+Var
+P, SM, SA:real
+
+Inicio
+escreval ("Digite seu piso salaril")
+leia(P)
+escreval ("Digite seu salario anual")
+leia(SA)
+SM <- SA/12
+se (SM >= P) então
+escreval("Seu salario é adequado a seu piso salarial, valor =",SM)
+senao
+escreval("Seu salario está abaixo do piso salarial, valor =",SM)
+fimse
+Fimalgoritmo
+ 
+
+3-
+
+Algoritmo "semnome"
+Var
+P, A, IMC:real
+
+Inicio
+escreval ("Digite seu peso")
+leia(P)
+escreval ("Digite sua altura")
+leia(A)
+IMC <- P/(A*A)
+se (IMC >= 18) então
+escreval("O senhor(ar) está acima do peso, valor do IMC =",IMC)
+senao
+escreval("O senhor(ar) está a abaixo do peso, valor do IMC =",IMC)
+fimse
+Fimalgoritmo
+
+
+4-
+
+Algoritmo "sem nome"
+Var
+nome: caractere
+idade: inteiro
+comorbidade: caractere
+
+Inicio
+escreval ("digite o nome da pessoa")
+leia (nome)
+escreval ("digite a idade da pessoa")
+leia (idade)
+escreval("ela possui comorbidade?n/y")
+escreval("escreva 'sim ou não'")
+leia (comorbidade)
+se (comorbidade = "sim")ou(idade >= 60) então
+escreval("Pode se vacinar!")
+senão
+escreval("Não pode se vacinar!")
+fimse
+
+Fimalgoritmo
+
+
+5-
+
+Algoritmo "sem nome"
+Var
+numero: inteiro
+numero2: inteiro
+
+Inicio
+escreval("Digite um número")
+leia (numero)
+numero2 <- numero MOD 2
+se numero2 = 0 então
+escreval("O número é par")
+senão
+escreval("O número é impar")
+fimse
+
+Fimalgoritmo
+
+6-
+
+Algoritmo "sem nome"
+Var
+nome1,nome2,nome3,nome4,nome5: caractere
+idade1,idade2,idade3,idade4,idade5,maior_idade: inteiro
+media_idade: real
+maior_idade
+
+Inicio
+Escreval("Informe o primeiro nome")
+leia (nome1)
+Escreval("Informe o segundo nome")
+leia (nome2)
+Escreval("Informe o terceiro nome")
+leia (nome3)
+Escreval("Informe o quarto nome")
+leia (nome4)
+Escreval("Informe o quinto nome")
+leia (nome5)
+Escreval("Informe a primeira idade")
+leia (idade1)
+Escreval("Informe a segunda idade")
+leia (idade2)
+Escreval("Informe a terceira idade")
+leia (idade3)
+Escreval("Informe a quarta idade")
+leia (idade4)
+Escreval("Informe a quinta idade")
+leia (idade5)
+
+media_idade <- (idade1+idade2+idade3+idade4+idade5)/5
+Se (idade1 >= idade2) então
+    maior_idade <- idade1
+senão
+    maior_idade <- idade2
+fimse
+se (idade3 >= maior_idade) então
+    maior_idade <- idade3
+fimse
+se (idade4 >= maior_idade) então
+    maior_idade <- idade4
+fimse
+se (idade5 >= maior_idade) então
+    maior_idade <- idade5
+fimse
+escreval("A maior idade é: ",maior_idade," e a média das idades é de: ",media_idade)
+Fimalgoritmo
+
+
+7- 
+Algoritmo "semnome"
+Var
+Nome,Nome_:caracter
+Senha,Senha_:inteiro
+Inicio
+Nome <- "admin"
+Senha <- 123
+Escreval("Nome de usuário:")
+leia (Nome_)
+Escreval("Senha:")
+Leia (Senha_)
+se (Nome = Nome_) e (Senha = Senha_) então
+Escreval("Login efetuado!")
+fimse
+se (Nome <> Nome_) e (Senha <> Senha_) então
+Escreval("Ambas informações estão incorretas!")
+fimse
+se Nome <> Nome_ então
+Escreval("Nome de usuário está incorreto!")
+fimse
+se Senha <> Senha_ então
+Escreval("A senha está incorreto!")
+fimse
+Fimalgoritmo
+
+8- 
+
+Algoritmo "semnome"
+Var
+Animal: caracter
+Quantidade: inteiro
+
+Inicio
+Escreval("Nome do animal:")
+Leia(Animal)
+Escreval("Quantidade de animais desta espécie:")
+Leia(Quantidade)
+
+se (Quantidade > 200) e (Quantidade < 500) então
+    Escreval("Espécie criticamente em perigo")
+senão
+ se (Quantidade > 500) e (Quantidade < 1000) então
+    Escreval("Espécie em perigo")
+fimse
+se (Quantidade > 5000) então
+    Escreval("Espécie vulnerável")
+fimse
+fimse
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+9- 
+
+Algoritmo "semnome"
+Var
+Q,P: inteiro
+PQ:real
+
+Inicio
+Escreval("Qual a população?")
+Leia(P)
+Escreval("Quantos metros quadrados tem?")
+Leia(Q)
+PQ <- P/Q
+se (PQ >= 100)então
+    Escreval("Densidade alta")
+senão
+ se (PQ > 25) e (PQ < 100) então
+    Escreval("Densadade média")
+fimse
+se (PQ < 25) então
+    Escreval("Densidade baixa")
+fimse
+fimse
+Fimalgoritmo
+
+
+10-
+
+Algoritmo "semnome"
+Var
+Q: inteiro
+
+Inicio
+Escreval("Quer falar com quem?")
+Escreval("(1) Atendente!")
+Escreval("(2) RH!")
+Escreval("(3) Gerente!")
+Escreval("(4) ou sair?")
+Leia(Q)
+
+se (Q = 1) então
+    Escreval("Sua chamada esta sendo encaminhada para a atendete!")
+senão
+ se (Q = 2) então
+    Escreval("Sua chamada esta sendo encaminhada para o RH!")
+ senão
+se (Q = 3) então
+    Escreval("Sua chamada esta sendo encaminhada para ao Gerente!")
+ senão
+    Escreval("Você esta saindo da chamada!")
+fimse
+fimse
+fimse
+Fimalgoritmo
+
+
