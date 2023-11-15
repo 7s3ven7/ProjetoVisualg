@@ -1,0 +1,349 @@
+Algoritmo "1"
+
+Var
+mes:inteiro
+P:caracter
+PO:logico
+Inicio
+escreval("mês?")
+leia(mes)
+PO <- Falso
+escreval("o ano é bissexto? sim?não")
+leia(P)
+se P = "sim" então
+PO <- Verdadeiro
+se (mes = 2) e (PO = Verdadeiro) entao
+escreval("fevereiro com 29 dias")
+fimse
+se mes = 1 então
+escreval("Janeiro com 31 dias") senao
+se (mes = 2) e (PO = Falso) entao
+escreval("fevereiro com 28 dias") senao
+se mes = 3 então
+escreval("março com 31 dias") senão
+se mes = 4 então
+escreval("abril com 30 dias") senão
+se mes = 5 então
+escreval("maio com 30 dias") senão
+se mes = 6 então
+escreval("junho com 31 dias") senão
+se mes = 7 então
+escreval("julho com 30 dias") senão
+se mes = 8 então
+escreval("agosto com 31 dias") senão
+se mes = 9 então
+escreval("setembro com 30 dias") senão
+se mes = 10 então
+escreval("outubro com 31 dias") senão
+se mes = 11 então
+escreval("novembro com 30 dias") senão
+se mes = 12 então
+escreval("dezembro com 31 dias") senão
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+fimse
+Fimalgoritmo
+
+Algoritmo "2"
+Var
+S,SA,D:inteiro
+O:caracter
+Inicio
+S <- 100
+escreval("Saldo,Saque ou Deposito.")
+leia(O)
+se O = "Saldo" entao
+escreval("Seu saldo é de 100 R$.")
+fimse
+se O = "Saque" então
+escreval("Seu Saldo esta em 100 R$,só saldos abaixo deste valor serão possiveis.")
+leia(SA)
+S <- S - SA
+escreval("Seu saldo total é de",S,"R$")
+fimse
+se O = "Deposito" então
+escreval("Digite a quantidade de deposito requisitado.")
+leia(D)
+S <- D + S
+escreval("Seu saldo total é de",S,"R$")
+fimse
+Fimalgoritmo
+
+
+Algoritmo "3"
+
+Var
+V,VD,D,F: Real
+VD: Real
+A: Caractere
+
+Inicio
+Frete <- 30
+escreval("Olá caro cliente, por favor digite o valor da compra")
+leia(V)
+escreval("Certo! Agora por favor digite sua categoria de assinante")
+escreval("Digite 1 para Assinante Premim")
+escreval("Digite 2 para Assinante Gold")
+escreval("Digite 3 para Assinante Silver")
+escreval("Digite 4 para Sem Assinatura")
+leia (A)
+escolha A
+Caso "1"
+Desconto <- V * (20/100)
+VD <- V - D
+Caso "2"
+D <- V* (20/100)
+VD <- V - D + F
+Caso "3"
+D <- V * (10/100)
+VD <- V - D + F
+Caso "4"
+VD <- V + F
+Outrocaso
+escreval ("Houve um erro, veja se o valor da compra ou a assinatura estão corretos")
+interrompa
+fimescolha
+escreval ("e", Frete)
+escreval ("O valor da compra será de: R$", VD)
+escreval ("O valor da compra sem desconto é de: R$", V)
+
+Fimalgoritmo
+
+
+
+Algoritmo "4"
+Var
+P,PP,PPP,Pontos:inteiro
+Inicio
+escreval("primero arremeso quantos pontos foram marcados")
+leia(P)
+escreval("primero arremeso quantos pontos foram marcados")
+leia(PP)
+escreval("primero arremeso quantos pontos foram marcados")
+leia(PPP)
+Pontos <- P+PP+PPP
+se Pontos = 15 então
+escreval ("Deus petequeiro")
+fimse
+se (Pontos <= 14) e (Pontos >= 10) então
+escreval ("Petequeiro profissa")
+fimse
+se (Pontos <= 9) e (Pontos >= 5) então
+escreval ("Petequeiro de fim de semana")
+fimse
+se (Pontos <= 4) e (Pontos >= 1) então
+escreval ("Pseudo-petequeiro")
+fimse
+se Pontos = 0 então
+escreval ("Nunca petequeiro")
+fimse
+Fimalgoritmo
+
+Algoritmo "5"
+Var
+C:caracter
+Inicio
+enquanto C <> "cereja" faca
+escreval("Qual fruta adicionar?")
+leia(C)
+fimenquanto
+escreval("Sua salada de fruta esta pronta")
+Fimalgoritmo
+
+Algoritmo "6"
+
+Var
+AP,AJ,p,contador: Inteiro
+Inicio
+AP <- 160
+AJ <- 175
+para p de 1 ate 8 faca
+AJ <- AJ + 1
+AP <- AP + 3
+contador <- contador + 1
+fimpara
+escreval ("Pedrinho ficou maior que Joãozinho em",contador," anos a mais")
+Fimalgoritmo
+
+
+Algoritmo "7"
+
+Var
+NS, contador,NC:inteiro
+
+Inicio
+contador <- 0
+escreval("TENTE ACERTAR")
+escreval("digite o um numero de 0 a 100")
+leia(NS)
+enquanto NS <> NC faca
+escreval("digite um número")
+leia(NC)
+escreval("Você errou tente novamente")
+contador <- contador + 1
+se NS > NC entao
+escreval("Seu número secreto é maior")
+fimse
+se  NS < NC entao
+escreval("Seu número secreto é menor")
+fimse
+fimenquanto
+escreval("Você acertou parabens ;)",contador," pena que tentou todas essas vezes")
+Fimalgoritmo
+
+Algoritmo "8"
+
+Var
+I1,I2,I3,I4,I5:inteiro
+N1,N2,N3,N4,N5:caracter
+calculo:real
+MI:inteiro
+Inicio
+calculo <- 0
+escreval("digite idade da primeira pessoa")
+leia(I1)
+escreval("digite idade da segunda pessoa")
+leia(I2)
+ escreval("digite idade da terceira pessoa")
+leia(I3)
+escreval("digite idade da quarta pessoa")
+leia(I4)
+escreval("digite idade da quinta pessoa")
+leia(I5)
+escreval("digite nome da primeira pessoa")
+leia(N1)
+escreval("digite nome da segunda pessoa")
+leia(N2)
+escreval("digite nome da terceira pessoa")
+leia(N3)
+escreval("digite nome da quarta pessoa")
+leia(N4)
+escreval("digite nome da quinta pessoa")
+leia(N5)
+
+calculo <- (I1+I2+I3+I4+I5)/5
+escreval("Média das idades é igual",calculo)
+
+Se (I1 >= I2) então
+    MI <- I1
+senão
+    MI <- I2
+fimse
+se (I3 >= MI) então
+    MI <- I3
+fimse
+se (I4 >= MI) então
+    MI <- I4
+fimse
+se (I5 >= MI) então
+    MI <- I5
+fimse
+escreval("O nome da pessoa que tem a maior idade tem a idade de", MI)
+FimalgoritmoAlgoritmo "semnome"
+
+Var
+I1,I2,I3,I4,I5:inteiro
+N1,N2,N3,N4,N5:caracter
+calculo:real
+MI:inteiro
+Inicio
+calculo <- 0
+escreval("digite idade da primeira pessoa")
+leia(I1)
+escreval("digite idade da segunda pessoa")
+leia(I2)
+ escreval("digite idade da terceira pessoa")
+leia(I3)
+escreval("digite idade da quarta pessoa")
+leia(I4)
+escreval("digite idade da quinta pessoa")
+leia(I5)
+escreval("digite nome da primeira pessoa")
+leia(N1)
+escreval("digite nome da segunda pessoa")
+leia(N2)
+escreval("digite nome da terceira pessoa")
+leia(N3)
+escreval("digite nome da quarta pessoa")
+leia(N4)
+escreval("digite nome da quinta pessoa")
+leia(N5)
+
+calculo <- (I1+I2+I3+I4+I5)/5
+escreval("Média das idades é igual",calculo)
+
+Se (I1 >= I2) então
+    MI <- I1
+senão
+    MI <- I2
+fimse
+se (I3 >= MI) então
+    MI <- I3
+fimse
+se (I4 >= MI) então
+    MI <- I4
+fimse
+se (I5 >= MI) então
+    MI <- I5
+fimse
+escreval("O nome da pessoa que tem a maior idade tem a idade de", MI)
+Fimalgoritmo
+
+
+Algoritmo "9"
+
+Var
+Sequencia: Inteiro
+Num: Real
+
+Inicio
+escreval ("escreva a sequência de 10 a 1 sem errar!")
+leia (Num)
+Para Sequencia de 10 até 2 passo -1 faça
+se Num <> Sequencia então
+escreval ("Você errou a sequência.")
+interrompa
+fimse
+escreval ("Escreva o próximo número")
+leia (Num)
+fimpara
+escreval ("Você concluiu a sequência corretamente")
+
+Fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo "10"
+
+Var
+P,C,CC:inteiro
+
+Inicio
+escreval("digite o um número")
+leia(P)
+CC <- P-1
+enquanto CC >= 1 faca
+P <- P*CC
+CC <- CC-1
+fimenquanto
+escreval(P)
+Fimalgoritmo
