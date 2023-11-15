@@ -55,6 +55,7 @@ fimse
 Fimalgoritmo
 
 Algoritmo "2"
+
 Var
 S,SA,D:inteiro
 O:caracter
@@ -79,14 +80,12 @@ escreval("Seu saldo total é de",S,"R$")
 fimse
 Fimalgoritmo
 
-
 Algoritmo "3"
 
 Var
 V,VD,D,F: Real
 VD: Real
 A: Caractere
-
 Inicio
 Frete <- 30
 escreval("Olá caro cliente, por favor digite o valor da compra")
@@ -116,12 +115,10 @@ fimescolha
 escreval ("e", Frete)
 escreval ("O valor da compra será de: R$", VD)
 escreval ("O valor da compra sem desconto é de: R$", V)
-
 Fimalgoritmo
 
-
-
 Algoritmo "4"
+
 Var
 P,PP,PPP,Pontos:inteiro
 Inicio
@@ -150,6 +147,7 @@ fimse
 Fimalgoritmo
 
 Algoritmo "5"
+
 Var
 C:caracter
 Inicio
@@ -174,7 +172,6 @@ contador <- contador + 1
 fimpara
 escreval ("Pedrinho ficou maior que Joãozinho em",contador," anos a mais")
 Fimalgoritmo
-
 
 Algoritmo "7"
 
@@ -230,10 +227,8 @@ escreval("digite nome da quarta pessoa")
 leia(N4)
 escreval("digite nome da quinta pessoa")
 leia(N5)
-
 calculo <- (I1+I2+I3+I4+I5)/5
 escreval("Média das idades é igual",calculo)
-
 Se (I1 >= I2) então
     MI <- I1
 senão
@@ -249,7 +244,9 @@ se (I5 >= MI) então
     MI <- I5
 fimse
 escreval("O nome da pessoa que tem a maior idade tem a idade de", MI)
-FimalgoritmoAlgoritmo "semnome"
+Fimalgoritmo
+
+Algoritmo "semnome"
 
 Var
 I1,I2,I3,I4,I5:inteiro
@@ -278,10 +275,8 @@ escreval("digite nome da quarta pessoa")
 leia(N4)
 escreval("digite nome da quinta pessoa")
 leia(N5)
-
 calculo <- (I1+I2+I3+I4+I5)/5
 escreval("Média das idades é igual",calculo)
-
 Se (I1 >= I2) então
     MI <- I1
 senão
@@ -299,13 +294,11 @@ fimse
 escreval("O nome da pessoa que tem a maior idade tem a idade de", MI)
 Fimalgoritmo
 
-
 Algoritmo "9"
 
 Var
 Sequencia: Inteiro
 Num: Real
-
 Inicio
 escreval ("escreva a sequência de 10 a 1 sem errar!")
 leia (Num)
@@ -318,25 +311,12 @@ escreval ("Escreva o próximo número")
 leia (Num)
 fimpara
 escreval ("Você concluiu a sequência corretamente")
-
 Fimalgoritmo
-
-
-
-
-
-
-
-
-
-
-
 
 Algoritmo "10"
 
 Var
 P,C,CC:inteiro
-
 Inicio
 escreval("digite o um número")
 leia(P)
